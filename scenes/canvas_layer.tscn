@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://bp8pq57dso11b"]
+
+[ext_resource type="FontFile" uid="uid://cs3b5ul60j23a" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_3jcd2"]
+[ext_resource type="Script" path="res://scenes/levels/ScoreLabel.gd" id="1_q5wvc"]
+[ext_resource type="Texture2D" uid="uid://bdk567lvexwom" path="res://assets/sprites/singlecoin.png" id="2_2dkcv"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 64.0
+offset_top = 30.0
+offset_right = -64.0
+offset_bottom = 87.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 12.0
+offset_right = 122.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3jcd2")
+theme_override_font_sizes/font_size = 20
+text = "2/2"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_q5wvc")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 6.0
+offset_right = 72.0
+offset_bottom = 63.0
+texture = ExtResource("2_2dkcv")
