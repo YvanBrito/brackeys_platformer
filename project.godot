@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="FirstGame"
+config/name="Brackeys_Platformer"
 run/main_scene="res://scenes/levels/levelOne.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
